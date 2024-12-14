@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>山本成河のポートフォリオ</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Lora:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <!-- ナビゲーションバー -->
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#works">Works</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="menu-toggle" id="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+        
+        <!-- ヒーローセクション -->
+        <section id="hero">
+            <h1 class="hero-title">Web制作を学んでいます</h1>
+            <p>日々、スキルアップのために努力を重ね、常に新しい技術を学んでいます。</p>
+            <a href="#works" class="cta">私の作品を見る</a>
+        </section>
+    </header>
+    <img src="images/project1.jpg" alt="プロジェクト1" style="width: 100%; max-width: 1800px;">
+    <!-- セクションスタイル -->
+    <section id="about" class="section">
+        <h2>About Me</h2>
+        <img src="images/me.jpg" alt="私の写真" style="width: 400px; height: auto;">
+        <h2>山本 成河 – Seiga Yamamoto</h2>
+        <p>1998年、富山県氷見市出身。金沢工業大学を卒業後、配管機器メーカーの営業マンとして約1年半、営業本部である東京支店に勤務。</p>
+        <p>現在は、Webエンジニアとして活躍する事を決意し、デザインやコーディングを学んでいます。</p>
+        <p>◇取得言語 Java、Python、C言語（大学在学中に取得）HTML、CSS、JavaScript（現在勉強中）</p>
+    </section>
+
+    <section id="skills" class="section">
+        <h2>Skills</h2>
+        <div class="skills-container">
+            <div class="skill">Java</div>
+            <div class="skill">Python</div>
+            <div class="skill">C</div>
+            <div class="skill">HTML</div>
+            <div class="skill">CSS</div>
+            <div class="skill">JavaScript</div>
+        </div>
+    </section>
+
+    <section id="works" class="section">
+        <h2>Works</h2>
+        <div class="work">
+            
+            <p>卒業研究では、CG(コンピュータグラフィクス)について研究 ー 郭研究室所属</p>
+            <p>Blenderを使用し、金沢の兼六園をモデリング</p>
+            <a href="https://www.youtube.com/watch?v=o8gmFxWId7c" target="_blank">
+            </a>
+            <p>クリックすると動画が再生されます。</p>
+        
+            <!-- 埋め込まれたYouTube動画 -->
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/o8gmFxWId7c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <footer>
+        <section id="contact" class="contact">
+            <h2>Contact</h2>
+            <p>ご質問があれば、お気軽にご連絡ください。</p>
+            <a href="mailto:yamamoto0829h@gmail.com" class="cta">メールを送る</a>
+        </section>
+        <div class="social-links">
+            <a href="https://github.com/yourusername" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://linkedin.com/in/yourprofile" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://twitter.com/yourusername" target="_blank"><i class="fab fa-twitter"></i></a>
+        </div>
+        <p>&copy; All Rights Reserved 2024 ©︎ Seiga Yamamoto</p>
+    </footer>
+
+    <!-- スタイル -->
+    <style>
+        /* 全体のスタイル */
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Lora', serif;
+        }
+
+        /* ナビゲーションバー */
+        nav {
+            background-color: #333;
+            padding: 10px 20px;
+        }
+
+        .nav-links {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .nav-links li {
+            margin: 0 15px;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* ヒーローセクション */
+        #hero {
+            background-color: #00aaff;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        #hero h1 {
+            font-size: 3em;
+        }
+
+        .cta {
+            display: inline-block;
+            background-color: #ff9800;
+            padding: 10px 20px;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        .cta:hover {
+            background-color: #ff5722;
+        }
+
+        /* セクション */
+        .section {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .section h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        /* スキルの表示 */
+        .skills-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .skill {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+
+        /* フッター */
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer .social-links a {
+            color: white;
+            margin: 0 10px;
+        }
+
+        footer .social-links a:hover {
+            color: #ff9800;
+        }
+    </style>
+
+    <script src="script.js"></script>
+</body>
+</html>
